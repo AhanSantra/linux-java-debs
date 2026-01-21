@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Wed, 21 Jan 2026 11:56:12 +0000
+Date: Wed, 21 Jan 2026 13:19:31 +0000
 Description: Generic Java applications packaged as Debian packages
 Label: Linux Java Applications
 Origin: LinuxJavaDebs
 Suite: stable
 MD5Sum:
- b2b0f9b972c6303ef99cc504fa59a434              227 Release
+ 56aa8e6aa575edef406fbbe19d93dd5d              227 Release
  6f85826e9f05155ee11de7f3a5673923              418 main/binary-amd64/Packages
- a17a62335fdd844c29ad0df649390086              319 main/binary-amd64/Packages.gz
+ 9690734c25b37009165d540519b1c0f6              319 main/binary-amd64/Packages.gz
 SHA1:
- 4085b727c1d263ef984983cf6d34a88c2a7622d3              227 Release
+ 22654c5eaecca79b5e3b3f0d7e29bcf337840419              227 Release
  8d9c5fd8e369be74fd9ef0d7e7c200e383695e78              418 main/binary-amd64/Packages
- eaa85b2a86da1bd62176daeb53ed475291ce24ba              319 main/binary-amd64/Packages.gz
+ 4f734a79d51eec03a9d0b036af547c751e083b64              319 main/binary-amd64/Packages.gz
 SHA256:
- 10a9031132ad50c36fce1118eeb26524dd5a375af8bf44e6a9a5d7200abf145d              227 Release
+ 562dac1448716e59796afeb195389e46aafe42d7d5ba8afcb06185b1fa23f92d              227 Release
  3a172051337364f5ed2987b4018347e6684a5d6e805c573860738bc2c7ae8a17              418 main/binary-amd64/Packages
- dedfe09119f734b5d58c710b823228df9d85a2a045243f7de2bccaf2eaa90629              319 main/binary-amd64/Packages.gz
+ c2acc726f8e4c651fdca5f37b776098c399114323c8211188812e89c6cad9168              319 main/binary-amd64/Packages.gz
 SHA512:
- a7bb94a9ec21ed28ab0e5da2f0ddc3b5252b685b9a43d54ea5ced935a47be83dbc59d2d8fc249dd84fb1e60df0d93be85cfae4d90e9b53b20d4488b797bfeca4              227 Release
+ 0f511e0e8aef9be716ec40ad9ed9c574fcdaf1a164bdb8146770155a9f76cddfe65851c0623651c8429955dcfc0e0f086aee46e93b6dc0f5072da6ac826944e7              227 Release
  caab8ff7311a24bfb0c38437a9c46136060246d9cca312aa7e914c52d8195ff3c70a819c5b25e5181fbfbb01b47b440d3968e2592ca375ad71c148db22d2222f              418 main/binary-amd64/Packages
- 92dbd9a123ed1b981e79ba63ca528a1398832694cca3c7ab985d5e5a9fd72eb1722fbfc6fcc3f62a4fc23f6cd5e2082331da99092e262d701f916ff5f5b632fe              319 main/binary-amd64/Packages.gz
+ e2c637de6633b9ae03cbf95551471b5e4f0735c35c5077bea005887d4b4e73dcd2c29db2c25fe967bd29363e6370b91f037b27f5920e34a9c07973595de41577              319 main/binary-amd64/Packages.gz
