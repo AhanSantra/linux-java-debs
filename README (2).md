@@ -7,14 +7,14 @@ Applications are:
 - Bundled with their own Java runtime
 - Installable without system Java
 
-Hosted via **GitHub Pages**.
+This repository is hosted using **GitHub Pages** and targets **Debian-based Linux systems**.
 
 ---
 
 ## 🖥 Supported Systems
 
 ### Fully Supported
-- **Linux Mint**
+- **Linux Mint** (primary target)
 
 ### Manual Setup Supported
 - Ubuntu
@@ -25,10 +25,11 @@ Hosted via **GitHub Pages**.
 
 ---
 
-## 🚀 Installation (Linux Mint – Optional Script)
+## 🚀 Installation (Optional Script – Linux Mint)
 
-> `setup.sh` is **optional** and designed for **Linux Mint**.  
-> All steps can be done manually on any Debian-based system.
+> `setup.sh` is **optional**.  
+> It automates standard APT steps and is intended mainly for **Linux Mint**.
+> All actions can be done manually on any Debian-based system.
 
 ### 1️⃣ Download setup script
 ```bash
@@ -41,7 +42,7 @@ chmod +x setup.sh
 ./setup.sh --add-repo
 ```
 
-### 3️⃣ List available packages
+### 3️⃣ List available packages (repo-only)
 ```bash
 ./setup.sh --list
 ```
@@ -49,6 +50,21 @@ chmod +x setup.sh
 ### 4️⃣ Install a package
 ```bash
 ./setup.sh --install calculator
+```
+
+### 5️⃣ Remove a package
+```bash
+./setup.sh --remove calculator
+```
+
+### 6️⃣ Completely purge a package
+```bash
+./setup.sh --purge calculator
+```
+
+### 7️⃣ Remove the repository
+```bash
+./setup.sh --remove-repo
 ```
 
 ---
@@ -80,8 +96,19 @@ sudo apt install calculator
 
 ---
 
+## 🗑 Manual Repository Removal
+
+```bash
+sudo rm /etc/apt/sources.list.d/linux-java-debs.list
+sudo rm /usr/share/keyrings/linux-java-debs.gpg
+sudo apt update
+```
+
+---
+
 ## 🔁 Updates
 
+Once installed, applications update normally using:
 ```bash
 sudo apt upgrade
 ```
@@ -90,16 +117,21 @@ sudo apt upgrade
 
 ## 📦 Repository Layout
 
-```
+```text
 pool/<app-name>/<version>/<package>.deb
+```
+
+Example:
+```text
+pool/calculator/1.2.0/calculator_1.2.0_amd64.deb
 ```
 
 ---
 
 ## 🧑‍💻 Developer Workflow
 
-1. Build Java project with Gradle
-2. Package using `jpackage`
+1. Build Java project using Gradle
+2. Create `.deb` using `jpackage`
 3. Copy `.deb` into:
    ```
    pool/<app-name>/<version>/
@@ -110,10 +142,20 @@ pool/<app-name>/<version>/<package>.deb
    ```
 5. Commit and push to GitHub
 
+GitHub Pages automatically serves the updated repository.
+
 ---
 
 ## 🔐 Security
 
 - Repository metadata is GPG signed
 - APT verifies packages automatically
-- No system Java required
+- No system Java installation required
+
+---
+
+## 📜 Notes
+
+- This repository distributes binaries only
+- Each application may have its own license
+- Intended for personal and small-scale community use
