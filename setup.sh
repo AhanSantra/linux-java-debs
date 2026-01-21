@@ -71,8 +71,28 @@ case "$1" in
     ;;
 
   --install-all)
-    echo "⬇ Installing all Linux Java packages..."
-    sudo apt install $(apt-cache search linux-java | awk '{print $1}')
+    echo "⬇ Installing all packages from Linux Java Debs repository..."
+
+    LIST_FILE="/var/lib/apt/lists/ahansantra.github.io_linux-java-debs_dists_stable_main_binary-amd64_Packages"
+
+    if [ ! -f "$LIST_FILE" ]; then
+      echo "❌ Repository not found in APT cache."
+      echo "➡ Run: ./setup.sh --add-repo"
+      exit 1
+    fi
+
+    PACKAGES=$(awk '/^Package:/ {print $2}' "$LIST_FILE")
+
+    if [ -z "$PACKAGES" ]; then
+      echo "ℹ No packages found in repository."
+      exit 0
+    fi
+
+    echo "📦 Packages to be installed:"
+    echo "$PACKAGES"
+    echo ""
+
+    sudo apt install $PACKAGES
     ;;
 
   --remove)
