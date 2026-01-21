@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: LinuxJavaDebs
+Label: Linux Java Applications
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Description: Generic Java applications packaged as Debian packages
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEFdZEsCUMFOHewNDu1ce7ZznBA+MFAmlwuUkACgkQ1ce7ZznB
+A+NWGQ/8CF78JhE1o1COPqIxX+FVf92Np+sKy+cVAVwwzpMTdRwUxj8KCkEcxdOJ
+U+vyBbYLGsP1mU6HVGQAd6PvuHvWNYSXayhzSocH7fu/iSuL181TrWzjt1txg37c
+LxoQOnB83k5J6VHgLaKYkiNokPSDeDYimt1d5QiPKQz9aDeJERFNjPNyzlHGI9uG
+Op8wW5quCreNrYHAo6Apb/LIU8gmjSYlfS32ABp5hF4oiXqbwxK+WczpaX+RxXb5
+j6kWCXNHF/gwR1G0zIMQ08wm5nmNHzV5UTQwee/+QxfarA/633r+sXvAH+dzM5sK
+sXaRTM8PKyzSK07XUCRuJQda7ypW9ugB3JwnN39NZjUAhpe4phsQBEsTy2xV1a52
+LVupFHPXCHMKyDpIBaQSKaqPJ/iXFsCNvpRIn1aqglAGfa+wnybUlSCyKAgy9Heb
+WD6HnsDzHFs1ru/6KX17Ik1nzXguXX/N1tXf1BSO1UfSGSilyYEslwzE9h5mh0JU
+4rlNvZ0FNp29GDu6uXiFJBryHlNtaaTo2xUAfmsbai/vA3vLBjA/uLl/qyNI4IgR
+KAHj0/haG151K4wG8LgC4r3510S3gXeaKnyeBKispWA3/nQwnZ5Vb0rXI/L5VNKN
+7MAdSYmS/kjycCok8MN28FKrKRZZaoRit+LctdRaNZ2xXjfqutE=
+=mvFn
+-----END PGP SIGNATURE-----

@@ -1,0 +1,13 @@
+Package: calculator
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Linux Java Repo
+Filename: pool/main/c/calculator/calculator_1.0.0_amd64.deb
+Size: 34501528
+MD5sum: c223408a2a503862bc79a5a6ce2bc57d
+SHA1: 45bb7ffb1d61a42e4ecdac7a6f2ce8e7ef2c69d8
+SHA256: 41a5d699acf8904cf3bd2355451f25ac426a7153bbe011b625e61750856d416b
+Section: utils
+Priority: optional
+Description: calculator Java application packaged with jpackage
+

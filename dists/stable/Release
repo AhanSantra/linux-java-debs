@@ -1,0 +1,7 @@
+Origin: LinuxJavaDebs
+Label: Linux Java Applications
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Description: Generic Java applications packaged as Debian packages
