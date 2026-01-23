@@ -52,17 +52,22 @@ chmod +x setup.sh
 ./setup.sh --install calculator
 ```
 
-### 5️⃣ Remove a package
+### 5️⃣ Install all packages
+```bash
+./setup.sh --install-all
+```
+
+### 6️⃣ Remove a package
 ```bash
 ./setup.sh --remove calculator
 ```
 
-### 6️⃣ Completely purge a package
+### 7️⃣ Completely purge a package
 ```bash
 ./setup.sh --purge calculator
 ```
 
-### 7️⃣ Remove the repository
+### 8️⃣ Remove the repository
 ```bash
 ./setup.sh --remove-repo
 ```
